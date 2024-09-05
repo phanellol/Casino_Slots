@@ -1,28 +1,10 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "ES5",
         "module": "CommonJS",
-        "baseUrl": ".",
-        "paths": {
-            "@/*": [
-                "src/*"
-            ]
-        },
-        "moduleResolution": "Node",
-        "outDir": "dist",
-        "importsNotUsedAsValues": "remove",
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "types": [
-            "vitest/globals"
-        ]
-    },
-    "include": [
-        "src/scripts/tsconfig.json"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+        "lib": [
+            "es2023",
+            "DOM"
+        ],
+    }
 }
